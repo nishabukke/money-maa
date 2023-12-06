@@ -1047,6 +1047,10 @@ blockquote cite {
     .tabs .d-flex .text-center, .list-flex {
         flex-direction: column;
     }
+
+    .TabButton{
+        width: 100%;
+    }
      
     .count {
         font-size: 30px;
