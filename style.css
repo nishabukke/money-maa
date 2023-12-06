@@ -223,7 +223,7 @@ a{
 .hero {
     position: absolute;
     top: 50%;
-    left: -15%;
+    left: 5%;
     z-index: 3;
     color: #111;
     text-align: center;
