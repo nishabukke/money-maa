@@ -738,6 +738,32 @@ textarea{
         margin: 0px auto;
     }
 
+    table{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .tbody1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tbody2 , .tbody3, .tbody4, .tbody5, .tbody6, .tbody7, .tbody8, .tbody9, .tbody10, .tbody11, .tbody12, .tbody2-1, .tbody2-2, .tbody2-3,.tbody2-4{
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        justify-content: center;
+    }
+
+    .tbody10, .tbody2-2{
+        width: 45%;
+    }
+
+    .tbody3, .tbody12, .tbody11, .tbody4, .tbody5, .tbody6, .tbody7, .tbody8, .tbody9, .tbody2-1{
+        width: 100%;
+    }
+
     
     .footer2, .footer3, .footer4{
         text-align: center;
