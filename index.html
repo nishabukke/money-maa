@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Money Maa</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="header">
+            <div class="top-header">
+                <div class="left-top-header">
+                    <p>Welcome to Money Maa, your expert in managing your finances!</p>
+                </div>
+                <div class="right-top-header">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+            <div class="nav">
+                <div class="logo">
+                    <img src="images/logo.png" alt="">
+                    <span>Money Maa</span>
+                </div>
+                <div class="nav-menu">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <li>
+                      <a href="#">Our Products <span><i class="fa-solid fa-angle-down"></i></span></a>
+                    <div class="dropdown">
+                      <ul>
+                        <li><a href="mutual-funds.html">Mutual Funds</a></li>
+                        <li><a href="retirement-saving.html">Retirement Saving</a></li>
+                        <li><a href="child-future.html">Child Future Saving</a></li>
+                        <li><a href="tax-saving.html">Tax Saving</a></li>
+                        <li><a href="bonds.html">Bonds</a></li>
+                        <li><a href="pms-aif.html">PMS / AIF</a></li>
+                      </ul>
+                    </div>
+                    </li>
+                    <!-- <a href="financial-calculators.html">Financial Calculators</a> -->
+                    <a href="contact.html">Contact Us</a>
+                </div>
+
+                <button class="hamburger">&#9776;</button>
+            <button class="cross">&#735;</button>
+            <div class="menu">
+                <ul>
+                  <a href="index.html"><li>Home</li></a>
+                  <a href="about.html"><li>About Us</li></a>
+                  <a href="#" class="nav__submenu"><li>Our Products <i class="fas fa-chevron-right"></i>
+                    <ul class="nav__sub">
+                        <li class="nav__item"><a class="sub__close" href="#"><i class="fas fa-chevron-left"></i> Back</a></li>
+                        <li class="nav__item">
+                          <a class="nav__link" href="mutual-funds.html">Mutual Funds</a>
+                        </li>
+                        <li class="nav__item">
+                          <a class="nav__link" href="retirement-saving.html">Retirement Saving</a>
+                        </li>
+                        <li class="nav__item">
+                          <a class="nav__link" href="child-future.html">Child Future Saving</a>
+                        </li>
+                        <li class="nav__item">
+                          <a class="nav__link" href="tax-saving.html">Tax Saving</a>
+                        </li>
+                        <li class="nav__item">
+                          <a class="nav__link" href="bonds.html">Bonds</a>
+                        </li>
+                        <li class="nav__item">
+                          <a class="nav__link" href="pms-aif.html">PMS / AIF</a>
+                        </li>
+                      </ul>
+                  </li></a>
+                  <a href="contact.html"><li>Contact</li></a>
+                </ul>
+            </div> 
+            </div>
+            <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+                <!-- Overlay -->
+                <div class="overlay"></div>
+              
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#bs-carousel" data-slide-to="1"></li>
+                  <!-- <li data-target="#bs-carousel" data-slide-to="2"></li> -->
+                </ol>
+                
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  <div class="item slides active">
+                    <div class="slide-1"></div>
+                    <div class="hero">
+                      <hgroup>       
+                        <h1>Solutions that  <br> never miss the aim</h1>
+                          <h3>Successful people dont earn more, they invest. <br> They invest so they can earn more</h3>
+                      </hgroup>
+                    </div>
+                  </div>
+                  <div class="item slides">
+                    <div class="slide-2"></div>
+                    <div class="hero">        
+                      <hgroup>  
+                        <h1>Expert Financial Advice</h1>
+                          <h3>Successful people dont earn more, they invest. <br> They invest so they can earn more</h3>
+                      </hgroup>       
+                    </div>
+                  </div>
+                  <!-- <div class="item slides">
+                    <div class="slide-3"></div>
+                    <div class="hero">        
+                      <hgroup>
+                          <h1>Family Protection</h1>        
+                          <h3>Successful people dont earn more, they invest. <br> They invest so they can earn more</h3>
+                      </hgroup>
+                    </div>
+                  </div> -->
+                </div> 
+              </div>
+        </div>
+        <div class="container-fluid">
+          <div class="product-section">
+              <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-md-3 col-lg-3 col-sm-12 height-fill">
+                  <div class="product">
+                    <div class="icon-decoration-border">
+                      <div class="icon-decoration-border-inner"><span class="icon icon-md-variant-2 icon-primary fa-solid fa-indian-rupee-sign"></span></div>
+                    </div>
+                    <h4><a href="#" class="product-title">Financial Planning</a></h4>
+                    <p>We'll help you make
+                      sensible decisions about
+                        money that can help you
+                      achieve your goals in life.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-12 col-md-3 col-lg-3 col-sm-12 height-fill">
+                  <div class="product">
+                    <div class="icon-decoration-border">
+                      <div class="icon-decoration-border-inner"><span class="icon icon-md-variant-2 icon-primary fa-solid fa-mug-hot"></span></div>
+                    </div>
+                    <h4><a href="#" class="product-title">Retirement Planning</a></h4>
+                    <p>Use our strategies and retirement advice, including retirement calculators to help you retire faster.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-12 col-md-3 col-lg-3 col-sm-12 height-fill">
+                  <div class="product">
+                    <div class="icon-decoration-border">
+                      <div class="icon-decoration-border-inner"><span class="icon icon-md-variant-2 icon-primary fa-solid fa-chart-simple"></span></div>
+                    </div>
+                    <h4><a href="#" class="product-title">Risk Management</a></h4>
+                    <p>Risk management is intended to manage financial and other losses associated with risks to your assets or business.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-12 col-md-3 col-lg-3 col-sm-12 height-fill">
+                  <div class="product">
+                    <div class="icon-decoration-border">
+                      <div class="icon-decoration-border-inner"><span class="icon icon-md-variant-2 icon-primary fa-solid fa-briefcase"></span></div>
+                    </div>
+                    <h4><a href="#" class="product-title">Taxation</a></h4>
+                    <p>Tax planning considers the tax implications of business decisions, usually with the goal of minimizing tax liability.
+                    </p>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="what-we-do-section">
+            <div class="row justify-content-center align-items-center">
+              <div class="col-12 col-md-12 col-lg-12 col-sm-12">
+                <div class="what-we-do-content">
+                  <h2 class="relative-shift-up">What We Do</h2>
+                <div class="hr-wrap">
+                  <hr class="hr-md-vertical hr-white">
+                </div>
+                <p class="big">We provide expert financial advice for businesses and individuals</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-section">
+            <div class="container">
+              <div class="h2 text-center about-title">About Us</div>
+              <hr class="hr-block hr-curious-blue">
+
+              <div class="row tabs">
+                <div class="col-12 col-md-6 col-lg-6 col-sm-12">
+                  <div class="d-flex">
+                    <div class="d-flex text-center"> 
+                      <div class="TabButton TabButtonSelected" id="Tab1" onclick="activeTab(event, 'Tab1')"> Facts</div>
+                      <div class="TabButton "id="Tab2" onclick="activeTab(event, 'Tab2')">Advantages</div>
+                      <div class="TabButton " id="Tab3" onclick="activeTab(event, 'Tab3')">Skills</div>
+                      </div>
+              </div>
+              <div class="d-flex-col">
+                <div id="SectionTab1" class="tab-section d-chart-n d-chart-show" >
+                  <p>Our company is your one stop solution for all needs. There is no doubt that we are the leaders and you don't have to worry about our image because it is perfect.</p>
+                  <ul class="list-flex">
+                    <li>
+                      <p class="count animated-first">275</p>
+                      <p class="text-black">Cases completed</p>
+                    </li>
+                    <li>
+                      <p class="count animated-first">19</p>
+                      <p class="text-black">Consultants</p>
+                    </li>
+                    <li>
+                      <p class="count animated-first">130</p>
+                      <p class="text-black">Awards won</p>
+                    </li>
+                  </ul>
+                </div>
+                <div id="SectionTab2" class="tab-section d-chart-n">
+                  <p>Our company is your one stop solution for all needs. There is no doubt that we are the leaders and you don't have to worry about our image because it is perfect.</p>
+                  <ul class="list-flex">
+                    <li>
+                      <p class="count animated-first">275</p>
+                      <p class="text-black">Cases completed</p>
+                    </li>
+                    <li>
+                      <p class="count animated-first">19</p>
+                      <p class="text-black">Consultants</p>
+                    </li>
+                    <li>
+                      <p class="count animated-first">130</p>
+                      <p class="text-black">Awards won</p>
+                    </li>
+                  </ul>
+                </div>
+                <div id="SectionTab3" class="tab-section d-chart-n">
+                  <p>Our company is your one stop solution for all needs. There is no doubt that we are the leaders and you don't have to worry about our image because it is perfect.</p>
+                  <ul class="list-flex">
+                    <li>
+                      <p class="count animated-first">275</p>
+                      <p class="text-black">Cases completed</p>
+                    </li>
+                    <li>
+                      <p class="count animated-first">19</p>
+                      <p class="text-black">Consultants</p>
+                    </li>
+                    <li>
+                      <p class="count animated-first">130</p>
+                      <p class="text-black">Awards won</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 col-sm-12">
+                  <div class="about-content">
+                    <h3 class=" text-dark">
+                      <a href="about.html" class="text-dark">Doing the right thing, at the right time.</a>
+                    </h3>
+                    <p class="text-black mt-3">
+                      Welcome to the leading company on the market! Our success
+                      is driven by the highest quality customer service. We can meet the requirements even of the whimsical clients; there are no complex tasks for us! Thanks for your choice! Our company can boast the reputation of the trusted partner known worldwide. We are proud
+                      of the uncompromising quality of services
+                    </p>
+                    <a class="btn btn-curious-blue-outline btn-sm btn-outline-thin" href="about.html">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="loan-calculator-section">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-md-7 col-lg-7 col-sm-12">
+                  <div class="calculator-wrap block-top-level">
+                    <div class="h2 text-start about-title">Loan Calculator</div>
+                    <hr class="hr-block hr-curious-blue hr-left">
+                    <form class="form-calculator rd-mailform" id="form-calculator" data-form-output="form-output-global" method="post" action="bat/rd-mailform.php" novalidate="novalidate">
+                      <div class="group-equal">
+                        <div class="form-wrap">
+                          <label class="form-label-outside" for="loan-amount">Loan Amount</label>
+                          <input class="form-input form-control-has-validation form-control-last-child" id="loan-amount" type="text" data-constraints="@Required"><span class="form-validation"></span>
+                        </div>
+                        <div class="form-wrap">
+                          <label class="form-label-outside" for="residual-value">Residual Value</label>
+                          <input class="form-input form-control-has-validation form-control-last-child" id="residual-value" type="text" data-constraints="@Required"><span class="form-validation"></span>
+                        </div>
+                      </div>
+                      <div class="group-equal">
+                        <div class="form-wrap">
+                          <label class="form-label-outside" for="interest-rate">Interest Rate %</label>
+                          <input class="form-input form-control-has-validation form-control-last-child" id="interest-rate" type="text" value="7.5" data-constraints="@Required"><span class="form-validation"></span>
+                        </div>
+                        <div class="form-wrap">
+                          <label class="form-label-outside" for="number-of-months">Number of Months</label>
+                          <input class="form-input form-control-has-validation form-control-last-child" id="number-of-months" type="text" value="7.5" data-constraints="@Required"><span class="form-validation"></span>
+                        </div>
+                      </div>
+                    </form>
+                    <p class="small offset-top-30">Results based in the data entered above:</p>
+                    <div class="form-calculator offset-top-30">
+                      <div class="group-equal">
+                        <div class="form-wrap">
+                          <label class="form-label-outside" for="monthly-payment">Monthly Payment</label>
+                          <input class="form-input" id="monthly-payment" type="text" form="form-calculator">
+                        </div>
+                        <div class="form-wrap">
+                          <label class="form-label-outside" for="interest-amount">Interest Amount</label>
+                          <input class="form-input" id="interest-amount" type="text" form="form-calculator">
+                        </div>
+                      </div>
+                      <div class="group-equal">
+                        <div class="form-wrap total">
+                          <label class="form-label-outside" for="total-payment">Total Payment</label>
+                          <input class="form-input" id="total-payment" type="text" form="form-calculator">
+                        </div>
+                        <div class="form-wrap">
+                          <button class="btn btn-sm btn-block btn-curious-blue btn-icon btn-icon-right btn-rect" type="submit" form="form-calculator">Calculate<span class="icon icon-sm fa-solid fa-angle-right"></span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-5 col-lg-5 col-sm-12">
+                  <figure class="image-wrap image-wrap-1 bg-athens-gray-inner">
+                    <img src="images/loan-calculator.png" alt="" width="552" height="654">
+                  </figure>
+                </div>
+              </div>
+            </div>  
+          </div> -->
+
+          <div class="testimonial-section">
+            <div class="container">
+              <div class="h2 text-center about-title">Testimonials</div>
+              <hr class="hr-block hr-curious-blue">
+
+              <div class="row">
+                <div class="col-12 col-md-12 col-lg-12 col-sm-12">
+                   <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="item item-inset">
+                            <blockquote class="quote-variant-1">
+                              <div class="quote-header"><img src="images/testim-user.jpg" alt="" width="72" height="72">
+                              </div>
+                              <div class="quote-body">
+                                <q>
+                                  Wow, I'm so happy with
+                                    your service. You managed
+                                    to exceed my expectations!
+                                  You guys are very efficient.
+                                </q>
+                              </div>
+                              <div class="quote-meta">
+                                <cite>Louise Smith</cite>
+                                <p class="text-gray-light">(CEO &amp; Founder)</p>
+                              </div>
+                            </blockquote>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="item item-inset">
+                          <blockquote class="quote-variant-1">
+                            <div class="quote-header"><img src="images/testim-user.jpg" alt="" width="72" height="72">
+                            </div>
+                            <div class="quote-body">
+                              <q>
+                                Wow, I'm so happy with
+                                  your service. You managed
+                                  to exceed my expectations!
+                                You guys are very efficient.
+                              </q>
+                            </div>
+                            <div class="quote-meta">
+                              <cite>Louise Smith</cite>
+                              <p class="text-gray-light">(CEO &amp; Founder)</p>
+                            </div>
+                          </blockquote>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="item item-inset">
+                            <blockquote class="quote-variant-1">
+                              <div class="quote-header"><img src="images/testim-user.jpg" alt="" width="72" height="72">
+                              </div>
+                              <div class="quote-body">
+                                <q>
+                                  Wow, I'm so happy with
+                                    your service. You managed
+                                    to exceed my expectations!
+                                  You guys are very efficient.
+                                </q>
+                              </div>
+                              <div class="quote-meta">
+                                <cite>Louise Smith</cite>
+                                <p class="text-gray-light">(CEO &amp; Founder)</p>
+                              </div>
+                            </blockquote>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="item item-inset">
+                            <blockquote class="quote-variant-1">
+                              <div class="quote-header"><img src="images/testim-user.jpg" alt="" width="72" height="72">
+                              </div>
+                              <div class="quote-body">
+                                <q>
+                                  Wow, I'm so happy with
+                                    your service. You managed
+                                    to exceed my expectations!
+                                  You guys are very efficient.
+                                </q>
+                              </div>
+                              <div class="quote-meta">
+                                <cite>Louise Smith</cite>
+                                <p class="text-gray-light">(CEO &amp; Founder)</p>
+                              </div>
+                            </blockquote>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="item item-inset">
+                            <blockquote class="quote-variant-1">
+                              <div class="quote-header"><img src="images/testim-user.jpg" alt="" width="72" height="72">
+                              </div>
+                              <div class="quote-body">
+                                <q>
+                                  Wow, I'm so happy with
+                                    your service. You managed
+                                    to exceed my expectations!
+                                  You guys are very efficient.
+                                </q>
+                              </div>
+                              <div class="quote-meta">
+                                <cite>Louise Smith</cite>
+                                <p class="text-gray-light">(CEO &amp; Founder)</p>
+                              </div>
+                            </blockquote>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="item item-inset">
+                            <blockquote class="quote-variant-1">
+                              <div class="quote-header"><img src="images/testim-user.jpg" alt="" width="72" height="72">
+                              </div>
+                              <div class="quote-body">
+                                <q>
+                                  Wow, I'm so happy with
+                                    your service. You managed
+                                    to exceed my expectations!
+                                  You guys are very efficient.
+                                </q>
+                              </div>
+                              <div class="quote-meta">
+                                <cite>Louise Smith</cite>
+                                <p class="text-gray-light">(CEO &amp; Founder)</p>
+                              </div>
+                            </blockquote>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="row">
+            <div class="col-12 col-md-3 col-lg-3 col-sm-12">
+              <div class="footer1">
+                <img src="images/logo.png" alt="">
+                <p>Welcome to the leading company delivering services that combine quality, reliability and compliance!</p>
+                <div class="social">
+                  <p>Follow Us: <a href="#"><span class="fa-brands fa-facebook-f"></span></a>
+                    <a href="#"><span class="fa-brands fa-instagram"></span></a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-3 col-lg-3 col-sm-12">
+              <div class="footer2">
+                <h3 class="text-white ">Navigation</h3>
+                <hr class="hr-variant-1">
+                <div class="footer-nav">
+                  <div class="footer-nav-column">
+                    <a href="about.html">About</a>
+                    <a href="about.html">Financial Calculators</a>
+                    <a href="about.html">Our Products</a>
+                  </div>
+                  <div class="footer-nav-column">
+                    <a href="downloads.html">Contact Us</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-3 col-lg-3 col-sm-12">
+              <div class="footer3">
+                <h3 class="text-white ">Contact Info</h3>
+                <hr class="hr-variant-1">
+                <div class="contact-links">
+                  <p><span class="fa-solid fa-phone"></span>+91 123 456 789</p>
+                  <p><span class="fa-solid fa-envelope"></span>someone@example.com</p>
+                  <p><span class="fa-solid fa-clock"></span>Mon - Sat: 9:00 - 18:00</p>
+                  <p><span class="fa-solid fa-location"></span>Pune, Maharashtra</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-3 col-lg-3 col-sm-12">
+              <div class="footer4">
+                <h3 class="text-white ">Newsletter</h3>
+                <hr class="hr-variant-1">
+                <div class="email">
+                  <p>Get the latest update</p>
+                  <div class="form-wrap-footer">
+                    <input class="form-input form-control-has-validation form-control-last-child" id="footer-contact-email" type="email" name="email" placeholder="E-mail">
+                    <button class="btn btn-picton-blue" type="submit">Send</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+
+    <!-- custom js -->
+
+      <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+        breakpoints: {
+          450: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+        },
+      });
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

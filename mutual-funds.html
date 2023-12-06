@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="pages.css">
+    <title>Money Maa</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="header">
+            <div class="top-header">
+                <div class="left-top-header">
+                    <p>Welcome to Money Maa, your expert in managing your finances!</p>
+                </div>
+                <div class="right-top-header">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+            <div class="nav">
+                <div class="logo">
+                    <img src="images/logo.png" alt="">
+                    <span>Money Maa</span>
+                </div>
+                <div class="nav-menu">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <li>
+                      <a href="#">Our Products <span><i class="fa-solid fa-angle-down"></i></span></a>
+                    <div class="dropdown">
+                      <ul>
+                        <li><a href="mutual-funds.html">Mutual Funds</a></li>
+                        <li><a href="retirement-saving.html">Retirement Saving</a></li>
+                        <li><a href="child-future.html">Child Future Saving</a></li>
+                        <li><a href="tax-saving.html">Tax Saving</a></li>
+                        <li><a href="bonds.html">Bonds</a></li>
+                        <li><a href="pms-aif.html">PMS / AIF</a></li>
+                      </ul>
+                    </div>
+                    </li>
+                    <!-- <a href="financial-calculators.html">Financial Calculators</a> -->
+                    <a href="contact.html">Contact Us</a>
+                </div>
+                <button class="hamburger">&#9776;</button>
+            <button class="cross">&#735;</button>
+            <div class="menu">
+                <ul>
+                  <a href="index.html"><li>Home</li></a>
+                  <a href="about.html"><li>About Us</li></a>
+                  <a href="#" class="nav__submenu"><li>Our Products <i class="fas fa-chevron-right"></i>
+                    <ul class="nav__sub">
+                        <li class="nav__item"><a class="sub__close" href="#"><i class="fas fa-chevron-left"></i> Back</a></li>
+                        <li class="nav__item">
+                          <a class="nav__link" href="mutual-funds.html">Mutual Funds</a>
+                        </li>
+                        <li class="nav__item">
+                          <a class="nav__link" href="retirement-saving.html">Retirement Saving</a>
+                        </li>
+                        <li class="nav__item">
+                          <a class="nav__link" href="child-future.html">Child Future Saving</a>
+                        </li>
+                        <li class="nav__item">
+                          <a class="nav__link" href="tax-saving.html">Tax Saving</a>
+                        </li>
+                        <li class="nav__item">
+                          <a class="nav__link" href="bonds.html">Bonds</a>
+                        </li>
+                        <li class="nav__item">
+                          <a class="nav__link" href="pms-aif.html">PMS / AIF</a>
+                        </li>
+                      </ul>
+                  </li></a>
+                  <a href="contact.html"><li>Contact</li></a>
+                </ul>
+            </div> 
+            </div>
+        </div>
+
+        <div class="common-header">
+            <div class="heading">
+                <h2>Mutual Funds</h2>
+            </div>
+        </div>
+        <div class="breadcrumbs-inner">
+            <div class="mt-0">
+              <ul class="breadcrumbs-custom-path">
+                <li><a href="index.html">Home</a></li>
+                <li class="active">Mutual Funds</li>
+              </ul>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+             <div class="product-tabs-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-4 col-lg-4 col-sm-12">
+                                <div class="d-flex flex-column text-center"> 
+                                  <div class="TabButton TabButtonSelected" id="Tab1" onclick="activeTab(event, 'Tab1')">Mutual Funds</div>
+                                  <div class="TabButton "id="Tab2" onclick="activeTab(event, 'Tab2')">SIP</div>
+                                  <!-- <div class="TabButton " id="Tab3" onclick="activeTab(event, 'Tab3')">SIP Performance</div>
+                                  <div class="TabButton " id="Tab4" onclick="activeTab(event, 'Tab3')">Current NFO</div>
+                                  <div class="TabButton " id="Tab5" onclick="activeTab(event, 'Tab3')">Dividend Announced</div>
+                                  <div class="TabButton " id="Tab6" onclick="activeTab(event, 'Tab3')">Fund Factsheets</div>
+                                  <div class="TabButton " id="Tab7" onclick="activeTab(event, 'Tab3')">Latest NAV</div>
+                                  <div class="TabButton " id="Tab8" onclick="activeTab(event, 'Tab3')">Scheme Comparison</div>
+                                  <div class="TabButton " id="Tab7" onclick="activeTab(event, 'Tab3')">Scheme Performance</div> -->
+                                </div>
+                        </div>
+                        <div class="col-12 col-md-8 col-lg-8 col-sm-12">
+                            <div id="SectionTab1" class="tab-section d-chart-n d-chart-show" >
+                                <h4 class="">What is Mutual Fund?</h4>
+                                <p>A mutual fund operates as a financial middleman that brings together a community of investors, each contributing their funds toward a predefined investment goal. At the helm of this collaborative effort is a skilled fund manager tasked with strategically deploying the pooled capital into targeted securities, typically encompassing stocks or bonds. Mutual funds stand out as a superior investment vehicle due to their remarkable cost efficiency and user-friendly nature. Investors are relieved from the intricate task of individually selecting specific stocks or bonds, as the fund manager assumes this responsibility, making mutual funds an accessible and convenient option for a broad spectrum of investors.</p>
+
+                                <h4 class="">How it Works?</h4>
+                                <p>A mutual fund functions as a collective investment vehicle, comprising a mix of stocks, bonds, and other securities collectively owned by a group of investors. The oversight and management of these assets are entrusted to a professional investment company. Creating a diversified investment portfolio can be a challenging feat for an individual investor, but mutual funds offer a solution by allowing them to invest in both equity and debt securities concurrently. When an investor allocates funds to a mutual fund, they acquire units corresponding to their investment, effectively becoming a unit holder. Subsequently, the mutual fund channels the pooled funds from unit holders into various securities such as stocks and bonds, generating returns in the form of interest or dividends. Profits stemming from the sale of securities at a higher price contribute to capital gains, which are then distributed among the unit holders.</p>
+
+                                <h4 class=" mt-5 mb-0">Advantages</h4>
+                                <div class="advantages">
+                                    <p class="adv-title">
+                                        <span class="fa-solid fa-check"></span>
+                                        <strong>Professional Expertise:</strong>
+                                    </p>
+                                    <p class="mt-3">One of the key benefits of mutual funds is the access to professional management for your investments. Many investors opt for mutual funds because they lack the time or specialized knowledge required to oversee their own portfolios. By investing in a mutual fund, individuals gain the expertise of a full-time manager who can make informed decisions and continually monitor the market.</p>
+                                </div>
+                                <div class="advantages">
+                                    <p class="adv-title">
+                                        <span class="fa-solid fa-check"></span>
+                                        <strong>Diversification Strategy:</strong>
+                                    </p>
+                                    <p class="mt-3">Mutual funds offer an effective way to diversify your investment portfolio. Instead of holding individual stocks or bonds, investors own "shares" (referred to as "units") in a mutual fund. This approach spreads risk across various assets, aiming to minimize the impact of a loss in any single investment by offsetting it with gains in others. Larger mutual funds, in particular, diversify across hundreds of stocks in various industries, a level of diversification challenging for individual investors with limited resources.</p>
+                                </div>
+                                <div class="advantages">
+                                    <p class="adv-title">
+                                        <span class="fa-solid fa-check"></span>
+                                        <strong>Economies of Scale:</strong>
+                                    </p>
+                                    <p class="mt-3">Mutual funds benefit from economies of scale. Their ability to buy and sell substantial quantities of securities at once translates to lower transaction costs compared to those incurred by individual investors making smaller transactions.</p>
+                                </div>
+                                <div class="advantages">
+                                    <p class="adv-title">
+                                        <span class="fa-solid fa-check"></span>
+                                        <strong>Liquidity and Flexibility:</strong>
+                                    </p>
+                                    <p class="mt-3">Similar to individual stocks, mutual fund units can be bought or sold at any time, providing investors with liquidity. This flexibility ensures that investors can adjust their portfolios according to their financial needs or market conditions.</p>
+                                </div>
+                                <div class="advantages">
+                                    <p class="adv-title">
+                                        <span class="fa-solid fa-check"></span>
+                                        <strong>Simplicity and Accessibility:</strong>
+                                    </p>
+                                    <p class="mt-3">Investing in mutual funds is a straightforward process, making it an attractive option for a wide range of investors. The minimum investment requirements are typically low, with some funds allowing investments for as little as Rs 500 on a monthly basis. This simplicity and accessibility make mutual funds a viable choice for both seasoned and novice investors alike.</p>
+                                </div>
+                              </div>
+                              <div id="SectionTab2" class="tab-section d-chart-n">
+                                <p>This is a simple strategy for accumulating wealth over a period of time by investing regularly at a fixed interval of time in mutual fund schemes, this is similar to the concept of recurring deposits scheme, but this being in equity come tagged with relatively a higher risk and higher return than the recurring deposit.</p>
+                                
+                                <h4 class="">What is Systematic Investment Plan?</h4>
+                                <p>An investor adopts a systematic investment approach by committing a fixed amount at regular intervals over an extended period. This strategic method ensures the acquisition of more investment units when market prices are lower and fewer units when prices are higher. Operating on the principle of rupee cost averaging, this approach enables investors to automatically navigate the market's fluctuations. By consistently investing at various market levels, individuals effectively participate in the natural swings of the market, leveraging the potential benefits of acquiring assets at different price points over time.</p>
+
+                                <h4 class=" mt-5 mb-0">Advantages</h4>
+                                <div class="advantages">
+                                  <p class="adv-title">
+                                      <span class="fa-solid fa-check"></span>
+                                      <strong>Rupee Cost Averaging:</strong>
+                                  </p>
+                                  <p class="mt-3">One of the primary advantages of a Systematic Investment Plan (SIP) is the application of rupee cost averaging. By investing a fixed amount at regular intervals, investors automatically buy more units when prices are lower and fewer units when prices are higher. This disciplined approach helps in reducing the impact of market volatility on the overall investment.</p>
+                                </div>
+                                <div class="advantages">
+                                  <p class="adv-title">
+                                      <span class="fa-solid fa-check"></span>
+                                      <strong>Disciplined Investing:</strong>
+                                  </p>
+                                  <p class="mt-3">SIP encourages a disciplined investment approach. Investors commit to a predetermined investment amount at regular intervals, promoting consistency in savings and investment behavior. This helps avoid impulsive investment decisions influenced by short-term market fluctuations.</p>
+                                </div>
+                                <div class="advantages">
+                                  <p class="adv-title">
+                                      <span class="fa-solid fa-check"></span>
+                                      <strong>Flexibility:</strong>
+                                  </p>
+                                  <p class="mt-3">SIPs offer flexibility in terms of investment amounts and frequencies. Investors can choose the amount they wish to invest and the interval at which they want to make contributions. This adaptability makes it suitable for investors with varying financial capacities and goals.</p>
+                                </div>
+                              </div>
+                              <div id="SectionTab3" class="tab-section d-chart-n">
+                                <p>Our company is your one stop solution for all needs. There is no doubt that we are the leaders and you don't have to worry about our image because it is perfect.</p>
+                                <ul class="list-flex">
+                                  <li>
+                                    <p class="count animated-first">275</p>
+                                    <p class="text-black">Cases completed</p>
+                                  </li>
+                                  <li>
+                                    <p class="count animated-first">19</p>
+                                    <p class="text-black">Consultants</p>
+                                  </li>
+                                  <li>
+                                    <p class="count animated-first">130</p>
+                                    <p class="text-black">Awards won</p>
+                                  </li>
+                                </ul>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+             </div> 
+        </div>
+
+
+        <div class="footer mt-5">
+          <div class="row">
+            <div class="col-12 col-md-3 col-lg-3 col-sm-12">
+              <div class="footer1">
+                <img src="images/logo.png" alt="">
+                <p>Welcome to the leading company delivering services that combine quality, reliability and compliance!</p>
+                <div class="social">
+                  <p>Follow Us: <a href="#"><span class="fa-brands fa-facebook-f"></span></a>
+                    <a href="#"><span class="fa-brands fa-instagram"></span></a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-3 col-lg-3 col-sm-12">
+              <div class="footer2">
+                <h3 class="text-white ">Navigation</h3>
+                <hr class="hr-variant-1">
+                <div class="footer-nav">
+                  <div class="footer-nav-column">
+                    <a href="about.html">About</a>
+                    <a href="about.html">Financial Calculators</a>
+                    <a href="about.html">Our Products</a>
+                  </div>
+                  <div class="footer-nav-column">
+                    <a href="downloads.html">Contact Us</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-3 col-lg-3 col-sm-12">
+              <div class="footer3">
+                <h3 class="text-white ">Contact Info</h3>
+                <hr class="hr-variant-1">
+                <div class="contact-links">
+                  <p><span class="fa-solid fa-phone"></span>+91 123 456 789</p>
+                  <p><span class="fa-solid fa-envelope"></span>someone@example.com</p>
+                  <p><span class="fa-solid fa-clock"></span>Mon - Sat: 9:00 - 18:00</p>
+                  <p><span class="fa-solid fa-location"></span>Pune, Maharashtra</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-3 col-lg-3 col-sm-12">
+              <div class="footer4">
+                <h3 class="text-white ">Newsletter</h3>
+                <hr class="hr-variant-1">
+                <div class="email">
+                  <p>Get the latest update</p>
+                  <div class="form-wrap-footer">
+                    <input class="form-input form-control-has-validation form-control-last-child" id="footer-contact-email" type="email" name="email" placeholder="E-mail">
+                    <button class="btn btn-picton-blue" type="submit">Send</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+
+    <!-- custom js -->
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
