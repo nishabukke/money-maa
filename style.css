@@ -916,7 +916,7 @@ blockquote cite {
 }
 
 .footer-nav a{
-    color: #888c94;
+    color: #fff;
 }
 
 .footer-nav a:hover{
@@ -1050,6 +1050,19 @@ blockquote cite {
      
     .count {
         font-size: 30px;
+    }
+
+    .icon-decoration-border{
+        position: relative;
+        margin: 0px 90px;
+        display: flex;
+        width: 40%;
+        height: 65px;
+        justify-content: center;
+    }
+
+    .list-flex .text-black{
+        text-align: center;
     }
 
     .text-black{
